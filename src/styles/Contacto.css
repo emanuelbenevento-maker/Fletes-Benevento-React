@@ -1,0 +1,84 @@
+
+.Contacto {
+  min-height: 100vh;
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.Contacto h1 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.Contacto > p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.Contacto form {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.Contacto label {
+  font-size: 17px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.Contacto input,
+.Contacto textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #050505;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.Contacto textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.Contacto button {
+  margin-top: 15px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+
+  .Contacto {
+    padding: 35px 15px;
+  }
+
+  .Contacto h1 {
+    font-size: 36px;
+  }
+
+  .Contacto > p {
+    font-size: 16px;
+  }
+
+  .Contacto form {
+    width: 100%;
+  }
+
+  .Contacto input,
+  .Contacto textarea {
+    font-size: 16px;
+  }
+}
+
