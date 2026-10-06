@@ -1,20 +1,33 @@
 
-header {
+.header-principal {
   background-color: #111;
-  padding: 20px 40px;
-
+  padding: 12px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
 }
 
-header h2 {
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 80px;
+  height: auto;
+}
+
+
+.logo-text {
   color: white;
   font-size: 30px;
   margin: 0;
 }
 
-nav ul {
+
+.menu ul {
   display: flex;
   list-style: none;
   gap: 30px;
@@ -22,38 +35,71 @@ nav ul {
   padding: 0;
 }
 
-nav a {
+.menu a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: bold;
 }
 
-nav a:hover {
-  color: #25D366;
+.menu a:hover {
+  color: #00ff40;
 }
+
+
+.cotizacion {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.cotizacion .btn-cotizar {
+  color: rgb(10, 1, 1);
+  font-size: 23px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+
+.whatsapp {
+  color: #06f85f;
+  font-size: 60px;
+  text-decoration: none;
+}
+
+.whatsapp:hover {
+  transform: scale(1.15);
+}
+
 
 @media (max-width: 768px) {
 
-  header {
+  .header-principal {
     flex-direction: column;
     gap: 15px;
-    padding: 20px 15px;
+    padding: 15px;
     text-align: center;
   }
 
-  header h2 {
+  .logo-img {
+    width: 65px;
+  }
+
+  .logo-text {
     font-size: 26px;
   }
 
-  nav ul {
+  .menu ul {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
   }
 
-  nav a {
+  .menu a {
     font-size: 16px;
   }
 
+  .cotizacion {
+    justify-content: center;
+  }
 }

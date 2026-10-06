@@ -1,11 +1,110 @@
 footer {
   background-color: #111;
+
   color: white;
+
+  padding: 45px 20px 20px;
+
   text-align: center;
-  padding: 20px;
 }
 
-footer p {
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.footer-contenido {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.footer-info {
+  width: 100%;
+}
+
+.footer-info h3 {
+  font-size: 30px;
+
+  margin-bottom: 25px;
+
+  color: white;
+}
+
+.footer-info p {
+  font-size: 17px;
+
+  margin: 12px 0;
+
+  color: #ddd;
+}
+
+.footer-info i {
+  margin-right: 10px;
+
+  color: #25d366;
+
+  font-size: 18px;
+}
+
+
+/* =========================
+   SEPARADOR
+========================= */
+
+footer hr {
+  width: 80%;
+
+  border: none;
+
+  border-top: 1px solid #555;
+
+  margin: 30px auto 20px;
+}
+
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.copyright {
   margin: 0;
-  font-size: 15px;
+
+  color: #aaa;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  footer {
+    padding: 35px 15px 20px;
+  }
+
+  .footer-info h3 {
+    font-size: 25px;
+  }
+
+  .footer-info p {
+    font-size: 15px;
+  }
+
+  .footer-info i {
+    font-size: 16px;
+  }
+
+  footer hr {
+    width: 95%;
+  }
+
+  .copyright {
+    font-size: 13px;
+  }
 }

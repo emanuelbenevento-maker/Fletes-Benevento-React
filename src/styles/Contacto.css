@@ -1,84 +1,221 @@
-
 .Contacto {
   min-height: 100vh;
-  padding: 50px 40px;
+
+  padding: 60px 40px;
+
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("../assets/servicios1.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   text-align: center;
 }
 
+
+/* =========================
+   TÍTULO
+========================= */
+
 .Contacto h1 {
-  font-size: 48px;
+  font-size: 55px;
+
   font-weight: 700;
+
   letter-spacing: 1px;
-  margin-bottom: 20px;
+
+  margin-bottom: 15px;
+
+  color: white;
+
+  text-shadow: 2px 2px 6px black;
 }
 
 .Contacto > p {
-  font-size: 20px;
+  font-size: 22px;
+
   line-height: 1.6;
-  margin-bottom: 35px;
+
+  margin-bottom: 40px;
+
+  color: white;
+
+  text-shadow: 2px 2px 5px black;
 }
+
+
+/* =========================
+   FORMULARIO
+========================= */
 
 .Contacto form {
   width: 100%;
-  max-width: 480px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
 
-.Contacto label {
-  font-size: 17px;
-  font-weight: 600;
+  max-width: 600px;
+
+  margin: 0 auto;
+
+  padding: 35px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  background-color: rgba(255, 255, 255, 0.95);
+
+  border-radius: 15px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+
   text-align: left;
 }
+
+
+/* =========================
+   ETIQUETAS
+========================= */
+
+.Contacto label {
+  font-size: 16px;
+
+  font-weight: 700;
+
+  color: #222;
+
+  margin-top: 5px;
+}
+
+
+/* =========================
+   CAMPOS
+========================= */
 
 .Contacto input,
 .Contacto textarea {
   width: 100%;
-  padding: 12px;
-  border: 2px solid #050505;
-  border-radius: 10px;
+
+  padding: 11px 12px;
+
+  border: 2px solid #222;
+
+  border-radius: 8px;
+
   font-family: inherit;
+
   font-size: 16px;
+
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.Contacto input {
+  height: 45px;
 }
 
 .Contacto textarea {
-  min-height: 120px;
+  min-height: 110px;
+
   resize: vertical;
 }
 
-.Contacto button {
-  margin-top: 15px;
-  padding: 14px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 17px;
-  font-weight: 600;
+.Contacto input:focus,
+.Contacto textarea:focus {
+  border-color: #0ea7bb;
+
+  box-shadow: 0 0 5px rgba(14, 167, 187, 0.4);
 }
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.Contacto button {
+  margin-top: 12px;
+
+  padding: 13px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+.Contacto button[type="submit"] {
+  background-color: #25d366;
+
+  color: white;
+}
+
+.Contacto button[type="submit"]:hover {
+  background-color: #1ebe5d;
+
+  transform: scale(1.02);
+}
+
+.Contacto button[type="button"] {
+  background-color: #222;
+
+  color: white;
+}
+
+.Contacto button[type="button"]:hover {
+  background-color: #444;
+
+  transform: scale(1.02);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
 
 @media (max-width: 768px) {
 
   .Contacto {
-    padding: 35px 15px;
+    padding: 50px 15px;
   }
 
   .Contacto h1 {
-    font-size: 36px;
+    font-size: 38px;
   }
 
   .Contacto > p {
-    font-size: 16px;
+    font-size: 18px;
+
+    line-height: 1.5;
   }
 
   .Contacto form {
-    width: 100%;
+    padding: 25px 20px;
+
+    max-width: 500px;
   }
 
-  .Contacto input,
+  .Contacto input {
+    height: 43px;
+  }
+
   .Contacto textarea {
+    min-height: 100px;
+  }
+
+  .Contacto button {
     font-size: 16px;
   }
 }
-

@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: flex-start;
 
-  padding-top: 80px;
+  padding-top: 120px;
 }
 
 .hero h1 {
@@ -25,32 +25,201 @@
   font-size: 70px;
   text-align: center;
   text-shadow: 2px 2px 8px black;
+  margin: 0;
 }
 
 .hero p {
   color: white;
   font-size: 35px;
-  margin-top: 20px;
+  margin-top: 25px;
   text-align: center;
   text-shadow: 2px 2px 8px black;
+  max-width: 900px;
+  line-height: 1.4;
 }
 
-.btn-cotizar {
-  display: inline-block;
-  background-color: #25D366;
-  color: white;
-  padding: 18px 40px;
-  border-radius: 35px;
-  font-size: 28px;
-  font-weight: bold;
-  text-decoration: none;
-  margin-top: 30px;
+
+
+
+.quienes-somos {
+  min-height: 400px;
+  padding: 80px 40px;
+  background-color: #f5f5f5;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-nosotros {
+  max-width: 900px;
+  text-align: center;
+}
+
+.texto-nosotros h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.texto-nosotros p {
+  font-size: 25px;
+  line-height: 1.7;
+  color: #581818;
+  margin-bottom: 20px;
+}
+
+
+.ventajas {
+  padding: 80px 40px;
+  background-color: white;
+  text-align: center;
+}
+
+.ventajas > h2 {
+  font-size: 52px;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+.contenedor-ventajas {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.ventaja {
+  width: 270px;
+  min-height: 250px;
+
+  padding: 40px 25px;
+
+  border-radius: 15px;
+
+  background-color: #f5f5f5;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
   transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.btn-cotizar:hover {
-  transform: scale(1.08);
+.ventaja:hover {
+  transform: translateY(-8px);
 }
+
+.ventaja i {
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #f50d0d;
+  display: block;
+}
+
+.ventaja h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.ventaja p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #0a0a0a;
+}
+
+
+
+.estadisticas {
+  padding: 70px 40px;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.estadistica {
+  min-width: 150px;
+}
+
+.estadistica h2 {
+  color: rgb(14, 167, 187);
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.estadistica p {
+  color: #ddd;
+  font-size: 18px;
+}
+
+.zonas {
+  padding: 80px 40px;
+
+  background-color: #dff6ff;
+
+  text-align: center;
+}
+
+.zonas > h2 {
+  font-size: 45px;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+.zonas > h2 i {
+  margin-right: 10px;
+}
+
+.contenedor-zonas {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.zona {
+  width: 220px;
+  min-height: 150px;
+
+  padding: 30px 20px;
+
+  background-color: white;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+  transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.zona:hover {
+  transform: translateY(-8px);
+}
+
+.zona i {
+  font-size: 40px;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.zona h3 {
+  font-size: 20px;
+  color: #111;
+  margin: 0;
+}
+
 
 @media (max-width: 768px) {
 
@@ -69,9 +238,69 @@
     line-height: 1.4;
   }
 
-  .btn-cotizar {
-    font-size: 20px;
-    padding: 14px 30px;
+
+  
+  .quienes-somos {
+    padding: 60px 25px;
   }
 
+  .texto-nosotros h2 {
+    font-size: 35px;
+  }
+
+  .texto-nosotros p {
+    font-size: 17px;
+  }
+
+
+  
+
+  .ventajas {
+    padding: 60px 20px;
+  }
+
+  .ventajas > h2 {
+    font-size: 32px;
+  }
+
+  .ventaja {
+    width: 100%;
+    max-width: 350px;
+  }
+
+
+  
+
+  .estadisticas {
+    padding: 60px 20px;
+    gap: 40px;
+  }
+
+  .estadistica {
+    width: 40%;
+  }
+
+  .estadistica h2 {
+    font-size: 40px;
+  }
+
+  .estadistica p {
+    font-size: 16px;
+  }
+
+
+  /* ZONAS */
+
+  .zonas {
+    padding: 60px 20px;
+  }
+
+  .zonas > h2 {
+    font-size: 32px;
+  }
+
+  .zona {
+    width: 100%;
+    max-width: 350px;
+  }
 }

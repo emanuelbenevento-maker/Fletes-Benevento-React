@@ -1,11 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import "./styles/global.css";
+
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Servicios from "./components/Servicios.jsx";
 import Galeria from "./components/Galeria.jsx";
 import Contacto from "./components/Contacto.jsx";
 import Footer from "./components/Footer";
+
 
 
 function App() {

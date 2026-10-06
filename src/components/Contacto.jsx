@@ -21,7 +21,23 @@ function Contacto() {
   const manejarEnvio = (e) => {
     e.preventDefault();
 
-    console.log("Datos del formulario:", formulario);
+    const mensaje = `Hola, quiero hacer una consulta.
+
+Nombre: ${formulario.nombre}
+Apellido: ${formulario.apellido}
+Email: ${formulario.email}
+Teléfono: ${formulario.telefono}
+Localidad: ${formulario.localidad}
+
+Mensaje:
+${formulario.mensaje}`;
+
+    const mensajeWhatsApp = encodeURIComponent(mensaje);
+
+    window.open(
+      `https://wa.me/5491167875523?text=${mensajeWhatsApp}`,
+      "_blank"
+    );
   };
 
   const resetearFormulario = () => {
@@ -36,8 +52,7 @@ function Contacto() {
   };
 
   return (
-    
-     <main className="Contacto">
+    <main className="Contacto">
       <h1>Contacto</h1>
 
       <p>
@@ -45,7 +60,6 @@ function Contacto() {
       </p>
 
       <form onSubmit={manejarEnvio}>
-
         <label>Nombre</label>
         <input
           type="text"
@@ -54,19 +68,20 @@ function Contacto() {
           onChange={manejarCambio}
         />
 
-       <label>Apellido</label>
-       <input
-        type="text"
-        name="apellido"
-        value={formulario.apellido}
-        onChange={manejarCambio}
+        <label>Apellido</label>
+        <input
+          type="text"
+          name="apellido"
+          value={formulario.apellido}
+          onChange={manejarCambio}
         />
+
         <label>Email</label>
         <input
-        type="email"
-        name="email"
-        value={formulario.email}
-        onChange={manejarCambio}
+          type="email"
+          name="email"
+          value={formulario.email}
+          onChange={manejarCambio}
         />
 
         <label>Teléfono</label>
@@ -92,13 +107,14 @@ function Contacto() {
           onChange={manejarCambio}
         ></textarea>
 
-        <button type="submit">Enviar consulta</button>
-        <button type="button" onClick={resetearFormulario}>
-         Limpiar formulario
+        <button type="submit">
+          Enviar consulta
         </button>
 
+        <button type="button" onClick={resetearFormulario}>
+          Limpiar formulario
+        </button>
       </form>
-      
     </main>
   );
 }

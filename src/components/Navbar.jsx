@@ -1,12 +1,23 @@
+
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
+import logo from "../assets/menu.png";
 
 function Navbar() {
   return (
-    <header>
-      <h2>Fletes Benevento</h2>
+    <header className="header-principal">
 
-      <nav>
+      <Link to="/" className="logo">
+        <img
+          src={logo}
+          className="logo-img"
+          alt="Logo Fletes Benevento"
+        />
+      </Link>
+
+      <h2 className="logo-text">Benevento</h2>
+
+      <nav className="menu">
         <ul>
           <li>
             <Link to="/">Inicio</Link>
@@ -25,6 +36,24 @@ function Navbar() {
           </li>
         </ul>
       </nav>
+
+      <div className="cotizacion">
+
+        <span className="btn-cotizar">
+          Cotizá ahora
+        </span>
+
+        <a
+          href="https://wa.me/5491167875523?text=Hola%2C%20quiero%20cotizar%20un%20flete."
+          target="_blank"
+          rel="noreferrer"
+          className="whatsapp"
+        >
+          <i className="fa-brands fa-whatsapp"></i>
+        </a>
+
+      </div>
+
     </header>
   );
 }

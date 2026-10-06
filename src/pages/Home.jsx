@@ -10,13 +10,6 @@ function Home() {
         Servicio de fletes y traslados en Buenos Aires.
       </p>
 
-     <button
-  type="button"
-  className="btn-cotizar"
-  onClick={() => alert("EL BOTÓN FUNCIONA")}
->
-  Cotizá ahora
-</button>
     </main>
   );
 }
