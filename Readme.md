@@ -23,17 +23,32 @@ Sección de servicios con tarjetas reutilizables.
 Galería de trabajos.
 Formulario de contacto controlado con useState.
 Envío del formulario manejado en React.
-Visualización de los datos del formulario en la consola.
+Visualización de los datos del formulario en la consola del navegador.
 Posibilidad de limpiar el formulario.
 Botón "Cotizá ahora" con acceso directo a WhatsApp.
+Estructura del proyecto
+src/components/ → componentes reutilizables de la aplicación.
+src/pages/ → páginas del proyecto.
+src/styles/ → archivos CSS utilizados para los diferentes componentes.
+src/assets/ → imágenes y recursos estáticos.
+src/App.jsx → configuración principal y rutas de la aplicación.
 Componentes principales
 Navbar
+Layout
 Home
 Servicios
 Card
 Galeria
 Contacto
 Footer
+Navegación
+
+El proyecto utiliza React Router para manejar la navegación entre las diferentes secciones:
+
+Inicio
+Servicios
+Galería
+Contacto
 Instalación y ejecución
 
 Para instalar las dependencias del proyecto:

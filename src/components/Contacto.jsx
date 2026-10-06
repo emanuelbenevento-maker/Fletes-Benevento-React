@@ -12,6 +12,8 @@ function Contacto() {
   });
 
   const manejarCambio = (e) => {
+    console.log("Cambio en el input:", e.target.name, e.target.value);
+
     setFormulario({
       ...formulario,
       [e.target.name]: e.target.value,
@@ -20,6 +22,8 @@ function Contacto() {
 
   const manejarEnvio = (e) => {
     e.preventDefault();
+
+    console.log("Formulario enviado:", formulario);
 
     const mensaje = `Hola, quiero hacer una consulta.
 
@@ -49,6 +53,8 @@ ${formulario.mensaje}`;
       localidad: "",
       mensaje: "",
     });
+
+    console.log("Formulario limpiado");
   };
 
   return (
